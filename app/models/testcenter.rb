@@ -1,0 +1,2 @@
+class Testcenter < ApplicationRecord
+end
