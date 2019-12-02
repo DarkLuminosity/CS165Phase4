@@ -12,27 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label "Name" %>
+    <%= form.text_field :name, {required: true} %>
   </div>
 
   <div class="field">
-    <%= form.label :sex %>
-    <%= form.text_field :sex %>
+    <%= form.label "Sex" %>
+    <%= form.select(:sex, Student::SEX) %>
   </div>
 
   <div class="field">
-    <%= form.label :dateofbirth %>
-    <%= form.date_select :dateofbirth %>
+    <%= form.label "Date of Birth" %>
+    <%= form.date_select :dateofbirth,  {order: [:month, :day, :year], prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }, start_year: Date.today.year, end_year: Date.today.year - 100}, {required: true} %>
   </div>
 
   <div class="field">
-    <%= form.label :cellphonenumber %>
+    <%= form.label "Cellphone Number" %>
     <%= form.text_field :cellphonenumber %>
   </div>
 
   <div class="field">
-    <%= form.label :address %>
+    <%= form.label "Address" %>
     <%= form.text_field :address %>
   </div>
 
