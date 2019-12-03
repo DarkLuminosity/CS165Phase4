@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Home</h1>
-
+<%= link_to 'New Student', new_student_path %> |
+<%= link_to 'Show High Schools', highschools_path %> |
+<%= link_to 'Show Test Centers', testcenters_path %>
 <table>
   <thead>
     <tr>
@@ -35,4 +37,3 @@
 
 <br>
 
-<%= link_to 'New Student', new_student_path %>
