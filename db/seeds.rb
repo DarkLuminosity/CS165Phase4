@@ -14,17 +14,17 @@ highschools = Highschool.create([{name: 'Jubilee Christian Academy', address: '1
 {name: 'Xavier School', address: '64 Xavier, San Juan, 1500 Metro Manila'},
 {name: 'Ateneo de Manila University', address: 'President Carlos P. Garcia Ave, Quezon City, 1108 Metro Manila'}])
 
-testcenters = Testcenter.create([{name: 'UP Diliman'},
-{name: 'UP Baguio'},
-{name: 'UP Manila'},
-{name: 'UP Los Banos'},
-{name: 'UP Mindanao'},
-{name: 'UP Cebu'},
-{name: 'UP Tacloban College'}])
+testcenters = Testcenter.create([{name: 'Diliman'},
+{name: 'Baguio'},
+{name: 'Manila'},
+{name: 'Los Banos'},
+{name: 'Mindanao'},
+{name: 'Cebu'},
+{name: 'Tacloban College'}])
 
-students = Student.create([{name: 'Engelberg See', sex: 'Male', dateofbirth: '10-07-1998', address: '40-A Pao Street Barangay Saint Peter, Quezon City', highschool_id: highschools.first, testcenter_id: testcenters.first},
-
-
+students = Student.create([{name: 'Engelberg See', sex: 'Male', dateofbirth: '10-07-1998', address: '40-A Pao Street Barangay Saint Peter, Quezon City', highschool_id: 'Jubilee Christian Academy', testcenter_id: 'Diliman'},
+{name: 'Gene Tan', sex: 'Female', dateofbirth: '12-02-2014', address: 'Unit 2 #65 Monte de Piedad St., Cubao, Q.C.', highschool_id: highschools.first, testcenter_id: testcenters.first}
+{name: 'Renne Alcazar', sex: 'Female', dateofbirth: '10-16-2019', address: 'Fordham Street Barangay Saint Ignatius', highschool_id: highschools.first, testcenter_id: testcenters.first}
 
 ])
 
